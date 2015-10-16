@@ -1,0 +1,21 @@
+/*Some styles*/
+
+* {margin: 0; padding: 0;}
+
+body {
+	text-align: center;
+}
+
+#ascii {
+	font-family: monospace;
+	font-size: 11px;
+	line-height: 70%;
+}
+
+#sprite {
+	display: none;
+}
+
+body {
+	overflow: hidden;
+}
