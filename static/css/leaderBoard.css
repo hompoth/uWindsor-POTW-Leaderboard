@@ -1,0 +1,97 @@
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+  display: none !important; }
+
+a {
+  color: #00B7FF; }
+
+.center {
+  width: 80%;
+  margin: 0 auto; }
+
+div#main-content {
+  padding-top: 10px; }
+
+table {
+  border-collapse: collapse; }
+
+td {
+  padding-top: 10px;
+  padding-bottom: 4px;
+  color: #000000;
+  border-bottom: 1px solid #999; }
+
+td.solved {
+  text-align: right; }
+
+td.challenger {
+  color: #00C080;
+  text-align: left;
+  font-size: 1.3em;
+}
+
+.header, th.challenger_header, th.rank_header {
+  color: #000000;
+  font-size: 1.7em; }
+
+th.challenger_header {
+  text-align: left; }
+
+th.rank_header {
+  text-align: right; }
+
+.error_msg {
+  font-size: 2em; }
+
+.btn, button {
+  margin: 4px 16px 4px 0;
+  padding: 2px 18px;
+  background-color: #516AE8;
+  border: none;
+  border-radius: 2px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.24);
+  color: #fff !important;
+  text-transform: uppercase;
+  font-weight: 700;
+  cursor: default;
+  transition: all 0.25s ease;
+  height: 32px;
+  font-size: 12px; }
+
+.btn:hover, button:hover {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.34);
+  background-color: #5A72EE; }
+
+.btn:active, button:active {
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.16);
+  background-color: #4059DB; }
+
+.btn:focus, button:focus {
+  outline: none; }
+
+.pull-right {
+  float: right; }
+
+.fader {
+  transition: 2.5s linear all;
+  opacity: 1;
+}
+
+.fader.ng-hide {
+  opacity: 0;
+  transition: 1.5s linear all;
+  display: block !important;
+}
+
+.loading {
+  position: fixed;
+  z-index: -1;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.load-center {
+  width: 100%;
+  margin-left: 45%;
+  text-align: center;
+}

@@ -1,0 +1,31 @@
+{% extends 'staticpages/main.html' %}
+
+{% block content %}
+
+<h1> {{ solution.student }}'s solution for {{ solution }}</h1>
+<hr />
+
+{% if solution.accepted %}
+    <div class="alert alert-success">
+        Accepted
+    </div>
+{% else %}
+    <div class="alert alert-warning">
+        Pending acceptance
+    </div>
+{% endif %}
+
+{% if public %}
+    {% if most_recent %}
+        <h2>This solution will become public once a new problem has been added</h2>
+    {% else %}
+    <pre>
+<code class="language-c++">
+{{ solution.source.read }}
+</code>
+    </pre>
+    {% endif %}
+{% else %}
+    <h2>This solution is not public</h2>
+{% endif %}
+{% endblock %}

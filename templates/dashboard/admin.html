@@ -1,0 +1,25 @@
+{% extends "dashboard/main.html" %}
+
+{% block content %}
+
+{% if pending_submissions %}
+    <h2><a href="/dashboard/submission/all/">Submissions Pending</a> ({{ pending_submissions }})</h2>
+{% endif %}
+
+<h2>Add New Problem</h2>
+<form method="POST" action="/dashboard/addproblem/">
+    {% csrf_token %}
+    <input class="form-control" name="year" placeholder="Year">
+    <br />
+    <input class="form-control" name="week" placeholder="Week">
+    <br />
+    <input class="form-control" name="nicename" placeholder="Nicename">
+    <br />
+    <textarea rows="10" name="description" class="form-control"></textarea>
+    <br />
+    <input type="checkbox" name="publish"> Publish Problem
+    <br />
+    <button type="submit" class="btn btn-primary">Add Problem</button>
+</form>
+
+{% endblock %}
