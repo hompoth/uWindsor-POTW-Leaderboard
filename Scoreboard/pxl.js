@@ -303,17 +303,7 @@ function loadJSON(callback) {
     xobj.onreadystatechange = function() {
         if (xobj.readyState == 4 && xobj.status == "200") {
             callback(xobj.responseText);
-        } else if (xobj.readyState == 4) {
-            var xobj2 = new XMLHttpRequest();
-            xobj2.overrideMimeType("application/json");
-            xobj2.open('GET', 'backup.json', true); // backup JSON, just in case
-            xobj2.onreadystatechange = function() {
-                if (xobj2.readyState == 4 && xobj2.status == "200") {
-                    callback(xobj2.responseText);
-                }
-            };
-            xobj2.send(null);
-        }
+        } 
     };
     xobj.send(null);
 }
